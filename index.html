@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="./fish.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fishing Journal</title>
+    <title>🎣</title>
     <style>
     body {
             font-family: Arial, sans-serif;
@@ -28,6 +29,7 @@
             border-radius: 10px;
             padding: 15px;
             margin-bottom: 20px;
+			text-align: center;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -57,23 +59,60 @@
             .entry {
                 padding: 10px;
                 margin-bottom: 10px;
+				text-align: center;
             }
         }
+		
+		.fish-image {
+    float: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    max-width: 60%
+   /* Adjust the width as needed */
+}
+
+/* Adjust the layout on smaller screens */
+@media (max-width: 768px) {
+    .entry {
+        padding: 10px;
+        margin-bottom: 10px;
+		text-align: center;
+    }
+
+    .fish-image {
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+}
+header {
+    position: sticky;
+    top: 0;
+	height: 20px;
+    z-index: 100; /* Ensure the header is above other elements */
+    background-color: #1E90FF; /* Dark blue header background color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Fishing Journal</h1>
+        <h1></h1>
     </header>
 
     <main>
         <section class="entry">
-            <h2>August 16, 2023 🐟🦈</h2>
+		    <h2>August 16, 2023 🐟🦈</h2>
+			<img src="./rod.jpg" alt="Fish Image" class="fish-image">
             <p>Location: Lake Sammamish</p>
             <p>Fish Caught: 0 trout, 0 other</p>
             <p>Weather: 90F - Sunny and calm</p>
             <p>Bait Used: Worms</p>
-            <p>Notes: It was a great day on the water, and I managed to not catch anything!</p>
+            <p>Purchased a rod, reel, line, bobbers, live worms, hooks, powerbait and some synthetic bait at big 5. Wasn't really sure what I was doing. Reel 
+			got jumpled so bad I had to cut it twice. Got a few meidum sized fish to eat the nightcrawlers off my tackle, but no hooks. </p>
         </section>
     </main>
 
